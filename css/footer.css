@@ -1,0 +1,128 @@
+/* Подвал */
+
+.footer {
+    background: var(--main-green-color);
+    padding: 150px 0px;
+}
+.footer a {
+    color: #fff !important;
+}
+.footer div {
+    color: #fff !important;
+}
+.footer .container .contact-wrapp .contact-wrapp__main-wrapper .contact-wrapp__item span {
+    font-size: 14px;
+    font-weight: 400;
+    color: #009C9C !important;
+}
+.footer .container .contact-wrapp .contact-wrapp__main-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.footer .container .contact-wrapp .contact-wrapp__main-wrapper .contact-wrapp__item {
+    display: flex;
+    flex-direction: column;
+}
+.footer .container .contact-wrapp .contact-wrapp__main-wrapper .contact-wrapp__item a {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 150%;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-top: 6px;
+    width: max-content;
+}
+.footer .container .contact-wrapp .contact-wrapp__main-wrapper .contact-wrapp__item a:hover {
+    opacity: 0.8;
+}
+.footer-logo {
+    margin-top: 94px;
+}
+.footer-logo .footer-logo-img {
+    width: 184px;
+    transition: 0.4s;
+}
+.footer-logo .footer-logo-img:hover {
+    opacity: 0.7;
+}
+.contact-form-wrapp {
+    width: 390px;
+}
+.contact-form-wrapp form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.contact-form-wrapp form input {
+    height: 64px;
+    background: #ffffff0f;
+    border-radius: 11px;
+    border: none;
+    padding: 0 20px 0 30px;
+    color: #fff !important;
+    font-size: 14px;
+    outline:none;
+}
+.contact-form-wrapp form input:focus {
+    border: 1px solid #ffffff57;
+}
+.contact-form-wrapp .form-text {
+    font-size: 12px;
+    margin-top: 30px;
+    color: #fff;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    display: block;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-form-wrapp form input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+.contact-form-wrapp form input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+.contact-form-wrapp form input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+.contact-form-wrapp form input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+.contact-form-wrapp form input::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fff;
+}
+
+.contact-form-wrapp form input::placeholder { /* Most modern browsers support this now. */
+   color:    #fff;
+}
+.footer .btn {
+    background: #e9e9e900;
+    color: #fff !important;
+}
+.footer .btn:hover {
+    background: #fff;
+    color: var(--main-green-color) !important;
+}
+.text-wrapper {
+    width: 408px;
+}
+.text-wrapper h4.footer-big-txt {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 64px;
+    letter-spacing: 1.28px;
+}
+.text-wrapper p {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.4px;
+    margin-top: 26px;
+}

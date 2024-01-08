@@ -1,0 +1,217 @@
+.header {
+    padding: 27px 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .container .menu-wrapp {
+    display: flex;
+    gap: 130px;
+    height: 40px;
+    align-items: center;
+}
+.header .container .menu-wrapp li.menu-item span {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+    transition: 0.4s;
+    cursor: pointer;
+    position: relative;
+}
+.header .container .menu-wrapp li.menu-item a { 
+    color: var(--white-color);
+    font-size: var(--small-text-size);
+    font-weight: 400;
+    transition: 0.4s;
+}
+.header .container .menu-wrapp li.menu-item.list {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header .container .menu-wrapp li.menu-item.list span::before {
+    content: "";
+    width: 0; 
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid var(--white-color);
+    position: absolute;
+    right: -20px;
+    top: 5px;
+    transition: 0.4s;
+}
+.header .container .menu-wrapp li.menu-item.list span:hover {
+    opacity: 0.7;
+}
+.header .container .menu-wrapp li.menu-item a:hover {
+    opacity: 0.7;
+}
+.menu-item__products-list {
+    position: absolute;
+    background: #F9F9FC;
+    padding: 10px 0;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    top: 40px;
+    display: none;
+}
+
+.menu-item__products-list a.products-item {
+    color: var(--dark-color-main-text) !important;
+    font-size: var(--small-text-size) !important;
+    padding: 10px 0;
+    display: block;
+}
+.products-item-wrapp {
+    padding: 0 40px 0 18px;
+    transition: 0.4s;
+}
+.products-item-wrapp:hover {
+    background: var(--main-green-color);
+}
+.products-item-wrapp:hover a {
+    color: var(--white-color) !important;
+}
+.header .container .menu-wrapp li.menu-item.list:hover .menu-item__products-list {
+    display: block;
+    z-index: 999;
+}
+.header-scroll {
+    position: fixed;
+    background: #F9F9FC;
+    z-index: 9999;
+    top: -40%;
+    transition: 0.4s;
+}
+.header-scroll.active {
+    top: 0%;
+}
+.header-scroll .container ul.menu-wrapp li.menu-item a {
+    color: #000;
+}
+.header-scroll .container .menu-wrapp li.menu-item span {
+    color: #000 !important;
+}
+.header-scroll .container .menu-wrapp li.menu-item.list span::before {
+    border-top: 8px solid #000;
+}
+.header-scroll .menu-item__products-list {
+    background: #C7DBDE;
+}
+.header-scroll-gradient {
+    width: 100%;
+}
+.header-scroll-gradient::before {
+    content: "";
+    background: #000;
+    width: 100%;
+    top: -40%;
+    background: linear-gradient(180deg, #F9F9FC 62.5%, rgba(249, 249, 252, 0.00) 100%);
+    position: fixed;
+    height: 70px;
+    transition: 0.4s;
+}
+.header-scroll-gradient.active::before {
+    top: 150px;
+}
+
+/* Анимации */
+
+.animTitleLeft.element-animation {
+    opacity: 0;
+    transform: translateX(-150px);
+}
+.animTitleLeft.element-animation.element-show {
+    opacity: 1;
+    transition: all 0.8s;
+    transform: translateX(0%);
+}
+
+.animTitleRigth.element-animation {
+    opacity: 0;
+    transform: translateX(150px);
+}
+.animTitleRigth.element-animation.element-show {
+    opacity: 1;
+    transition: all 0.8s;
+    transform: translateX(0%);
+}
+
+.top-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #9797976e;
+    border: none;
+    position: fixed;
+    cursor: pointer;
+    right: 20px;
+    bottom: -10%;
+    transition: 0.4s;
+}
+.top-btn:hover {
+    background: #97979725;
+}
+.top-btn.active {
+    bottom: 20px;
+}
+.top-btn img {
+    width: 18px;
+}
+.burger-button {
+    display: none;
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+        padding: 0 30px;
+    }
+    .menu-wrapp {
+        display: none !important;
+    }
+    .burger-button {
+        display: block;
+        height: 23px;
+        width: 30px;
+        position: relative;
+        cursor: pointer;
+    }
+    .burger-button span {
+        width: 30px;
+        position: absolute;
+        height: 1px;
+        background: #fff;
+    }
+    .burger-button span:first-child {
+        top: 0;
+    }
+    .burger-button span:last-child {
+        bottom: 0;
+    }
+    .burger-button::before {
+        content: "";
+        width: 30px;
+        position: absolute;
+        height: 1px;
+        background: #fff;
+        top: 46%;
+    }
+    .header-scroll .burger-button::before {
+        background: #000000;
+    }
+    .header-scroll .burger-button span {
+        background: #000000;
+    }
+}
+@media (max-width: 920px) {
+
+}
